@@ -6,6 +6,7 @@ module.exports = {
     password: process.env.MYSQL_PASSWORD,
     database: process.env.DATABASE,
     host: process.env.HOST,
+    url: process.env.DATABASE_URL,
     dialect: 'postgres',
   },
   test: {
@@ -13,6 +14,7 @@ module.exports = {
     password: process.env.MYSQL_PASSWORD,
     database: process.env.DATABASE,
     host: process.env.HOST,
+    url: process.env.DATABASE_URL,
     dialect: 'postgres',
   },
   production: {
@@ -20,6 +22,7 @@ module.exports = {
     password: process.env.MYSQL_PASSWORD,
     database: process.env.DATABASE,
     host: process.env.HOST,
+    url: process.env.DATABASE_URL,
     dialect: 'postgres',
   },
 };
