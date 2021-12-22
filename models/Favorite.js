@@ -1,4 +1,6 @@
-module.exports = (sequelize, DataTypes) => {
+const sequelize = require('../database/sequelize');
+
+module.exports = (DataTypes) => {
   const Favorite = sequelize.define('Favorite', {
     id: { type: DataTypes.INTEGER, primaryKey: true, autoIncrement: true },
     imagePath: DataTypes.STRING,
